@@ -58,12 +58,25 @@ UI updates instantly based on selected filter.
 ---
 
 ## How to Run
+1. **Clone the repository**
 
-Install dependencies and start development server:
-```bash
-npm install
-npm run dev
-```
+   ```bash
+   git clone https://github.com/ignjatovicms/tasks-manager.git
+   ```
+2. **Open project folder**
+    ```bash
+    cd tasks-manager
+    ```
+2. **Install dependencies**
+    ```bash
+    npm install
+    ```
+3. **Start development server**
+    ```bash
+    npm run dev
+    ```
+4. **Open the local URL shown in terminal (usually http://localhost:5173)**
+
 
 ## Project Notes
 
