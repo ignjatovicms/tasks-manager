@@ -65,10 +65,10 @@ npm install
 npm run dev
 ```
 
-Project Notes
+## Project Notes
 
 This project is a React refactor of my original Vanilla JS TasksFlow app.
 The main improvement is replacing DOM manipulation with React state management (useState, useEffect) and cleaner UI rendering logic.
 
-Author
+## Author
 Made by Milos Ignjatovic
