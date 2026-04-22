@@ -59,12 +59,11 @@ UI updates instantly based on selected filter.
 
 ## How to Run
 
-1. Install dependencies
+Install dependencies and start development server:
 ```bash
 npm install
-2. Start development server
-```bash
 npm run dev
+```
 
 Project Notes
 
