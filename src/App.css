@@ -1,0 +1,155 @@
+/* RESET / BODY */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f2f2f7;
+  color: #1d1d1f;
+}
+
+/* MAIN APP */
+.container {
+  max-width: 430px;
+  margin: 50px auto;
+  padding: 20px;
+  border: none;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #5856d6;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* INPUT ROW */
+.input-row {
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 18px;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  color: #5856d6;
+}
+
+/* FILTER BUTTONS */
+.btn-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+  margin-bottom: 18px;
+  margin-left: 70px;
+}
+
+/* ALL BUTTONS */
+button {
+  border: none;
+  padding: 9px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ececf6;
+  color: #5856d6;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #5856d6;
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* TASK LIST */
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* TASK CARD */
+.task-item {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  animation: fadeIn 0.25s ease;
+}
+
+/* TASK TEXT */
+.task-text {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* DONE TASK */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* RIGHT SIDE BUTTONS */
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* DELETE ANIMATION */
+.removing {
+  animation: slideDownFade 0.35s ease forwards;
+}
+
+/* ENTER */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DELETE */
+@keyframes slideDownFade {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 80px;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(30px);
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+}
