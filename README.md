@@ -18,6 +18,12 @@ User can add tasks, mark them as completed, delete them, and filter between diff
 
 ---
 
+## Live Demo
+
+Try the deployed application:
+
+[**Open Task Manager**](https://tasks-manager-six-kappa.vercel.app/)
+
 ### Filtered view (Active)
 
 ![UI](Screenshots/img2.png)
